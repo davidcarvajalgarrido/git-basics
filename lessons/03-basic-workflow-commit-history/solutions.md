@@ -1,17 +1,3 @@
-echo "A" > a.txt
-echo "B" > b.txt
-git add -p a.txt   # selecciona hunks intencionalmente
-git commit -m "Añade parte inicial de a.txt"
-git show
-echo "Detalle extra" >> README.md
-git add README.md
-git commit --amend -m "Crea README inicial y añade detalle"
-git log -1 --stat
-echo "cambios" >> a.txt
-git restore a.txt
-git add b.txt
-git restore --staged b.txt
-git status
 # Lección 3 — Soluciones
 
 ## Ejercicio 1: Solución — Crea tu primer repositorio
